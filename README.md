@@ -1,17 +1,17 @@
-# react-native-contact-picker
+# react-native-choose-contact
 
 Pick contact
 
 ## Installation
 
 ```sh
-npm install react-native-contact-picker
+npm install react-native-choose-contact
 ```
 
 ## Usage
 
 ```js
-import { pickContact } from 'react-native-contact-picker';
+import { pickContact } from 'react-native-choose-contact';
 
 // ...
 

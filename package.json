@@ -1,5 +1,5 @@
 {
-  "name": "react-native-contact-picker",
+  "name": "react-native-choose-contact",
   "version": "0.1.0",
   "description": "Pick contact",
   "source": "./src/index.tsx",
@@ -31,7 +31,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-contact-picker-example",
+    "example": "yarn workspace react-native-choose-contact-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -46,14 +46,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ealimardaniii/react-native-contact-picker.git"
+    "url": "git+https://github.com/ealimardaniii/react-native-choose-contact.git"
   },
   "author": "Erfan Alimardani <mo.erfana6505@yahoo.com> (https://github.com/ealimardaniii)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ealimardaniii/react-native-contact-picker/issues"
+    "url": "https://github.com/ealimardaniii/react-native-choose-contact/issues"
   },
-  "homepage": "https://github.com/ealimardaniii/react-native-contact-picker#readme",
+  "homepage": "https://github.com/ealimardaniii/react-native-choose-contact#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

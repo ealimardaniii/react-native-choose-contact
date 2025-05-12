@@ -1,4 +1,4 @@
-declare module 'react-native-contact-picker' {
+declare module 'react-native-choose-contact' {
   export type Contact = {
     mobile: string;
     name: string;

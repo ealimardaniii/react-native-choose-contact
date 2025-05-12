@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
-import { pickContact } from 'react-native-contact-picker';
+import { pickContact } from 'react-native-choose-contact';
 
 export default function App() {
   const [contact, setContact] = useState('');

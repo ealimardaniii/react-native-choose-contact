@@ -1,8 +1,8 @@
 import { NativeModules, Platform } from 'react-native';
-import type { Contact } from 'react-native-contact-picker';
+import type { Contact } from 'react-native-choose-contact';
 
 const LINKING_ERROR =
-  `The package 'react-native-contact-picker' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'react-native-choose-contact' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
