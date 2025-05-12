@@ -1,6 +1,6 @@
 {
   "name": "react-native-choose-contact",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Pick contact",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
@@ -14,6 +14,7 @@
   },
   "files": [
     "src",
+    "index.d.ts",
     "lib",
     "android",
     "ios",
