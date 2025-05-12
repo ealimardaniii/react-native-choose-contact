@@ -10,15 +10,24 @@ npm install react-native-contact-picker
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-contact-picker';
+import { pickContact } from 'react-native-contact-picker';
 
 // ...
 
-const result = await multiply(3, 7);
+const contact = await pickContact();
 ```
 
+### TypeScript Support
+
+This package includes TypeScript type definitions:
+
+```typescript
+type Contact = {
+  mobile: string;
+  name: string;
+};
+```
 
 ## Contributing
 
@@ -29,5 +38,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 MIT
 
 ---
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
