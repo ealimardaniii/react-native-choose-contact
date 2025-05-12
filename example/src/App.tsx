@@ -1,17 +1,23 @@
-import { multiply } from 'react-native-contact-picker';
-import { Text, View, StyleSheet } from 'react-native';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Text, View, StyleSheet, Button } from 'react-native';
+import { pickContact } from 'react-native-contact-picker';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
+  const [contact, setContact] = useState('');
 
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const handlePress = async () => {
+    try {
+      const contact = await pickContact();
+      setContact(JSON.stringify(contact));
+    } catch {
+      setContact('Error occured');
+    }
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="Pick contact" onPress={handlePress} />
+      <Text>{contact}</Text>
     </View>
   );
 }

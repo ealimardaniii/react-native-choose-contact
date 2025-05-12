@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+import type { Contact } from 'react-native-contact-picker';
 
 const LINKING_ERROR =
   `The package 'react-native-contact-picker' doesn't seem to be linked. Make sure: \n\n` +
@@ -6,8 +7,8 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const ContactPicker = NativeModules.ContactPicker
-  ? NativeModules.ContactPicker
+const ContactPickerModule = NativeModules.ContactPickerModule
+  ? NativeModules.ContactPickerModule
   : new Proxy(
       {},
       {
@@ -17,6 +18,6 @@ const ContactPicker = NativeModules.ContactPicker
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ContactPicker.multiply(a, b);
+export function pickContact(): Promise<Contact> {
+  return ContactPickerModule.pickContact();
 }
