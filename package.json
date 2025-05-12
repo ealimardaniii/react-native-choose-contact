@@ -4,7 +4,7 @@
   "description": "Pick contact",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
-  "types": "index.d.ts",
+  "types": "./lib/index.d.ts",
   "exports": {
     ".": {
       "types": "./lib/typescript/src/index.d.ts",
