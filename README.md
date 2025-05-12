@@ -18,8 +18,7 @@ import { pickContact } from 'react-native-choose-contact';
 const contact = await pickContact();
 ```
 
-![record](https://github.com/user-attachments/assets/2b844bbd-41e8-44c3-b1e6-6f182fe00a0b)
-https://github.com/user-attachments/assets/6a478e4f-700d-4574-b54b-2cf7633e9aac
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8bb2d604-88d8-47fc-8a57-be6a567c9dda)
 
 
 ### TypeScript Support
